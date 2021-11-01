@@ -1,8 +1,8 @@
 import { Component } from "react";
 
-class StaticPage extends Component{
-    render(){
-        return(
+class StaticPage extends Component {
+    render() {
+        return (
             <div>
                 <div className="header-circles">
                     <div className="header-circle"></div>

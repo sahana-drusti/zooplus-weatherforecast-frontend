@@ -21,7 +21,7 @@ class ForeCast extends Component {
                             forecastTesult: (res.data)
                         })
                 })
-                .catch(err =>{
+                .catch(err => {
                     console.log(err);
                 })
         }
@@ -33,10 +33,8 @@ class ForeCast extends Component {
 
     render() {
         var err = this.state.forecastTesult['err'];
-        console.log(this.state.forecastTesult);
-console.log('here'+err);
-let city= this.props.city;
-city = city.toUpperCase();
+        let city = this.props.city;
+        city = city.toUpperCase();
         if (!err) {
             var json = this.state.forecastTesult;
             var arr = [];
@@ -119,8 +117,8 @@ city = city.toUpperCase();
             );
         }
         else {
-            
-            return ( <InvalidCityName city={this.props.city}/>)
+
+            return (<InvalidCityName city={this.props.city} />)
         }
 
     }
